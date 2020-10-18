@@ -39,6 +39,16 @@ const TittlesStyle = {
     fontSize: "20px"
 }
 
+const EducationStyle = {
+    width: "100%",
+    height: "40%"
+}
+
+const SocialNetworkStyle = {
+    width: "100%",
+    height: "34%"
+}
+
 export default function LeftPanel() {
     return(
         <div className="LeftPanel" style={PersonInformationStyle}>
@@ -47,7 +57,7 @@ export default function LeftPanel() {
                 <figcaption style={NameStyle}>Петухов Александр Сергеевич</figcaption>  {/*  TODO Все утолкать в Json'ы и сделать переключатель языка*/}
             </figure>
 
-            <div className="Education">
+            <div className="Education"  style={EducationStyle}>
             <hr width="90%" align="center" size="2" color="white"/>
             <h1 style={TittlesStyle}>Образование</h1>  {/*TODO Все утолкать в Json'ы и сделать переключатель языка*/}
             <hr width="90%" align="center" size="2" color="white"/>
@@ -55,7 +65,7 @@ export default function LeftPanel() {
                 {/*TODO контент об образовании*/}
             </div>
 
-            <div className="SocialNetworks">
+            <div className="SocialNetworks" style={SocialNetworkStyle}>
             <hr width="90%" align="center" size="2" color="white"/>
             <h1 style={TittlesStyle}>Контакты</h1> {/* TODO Все утолкать в Json'ы и сделать переключатель языка*/}
             <hr width="90%" align="center" size="2" color="white"/>

@@ -10,7 +10,8 @@ const MainInformation = {
 const TittlesStyle = {
     marginLeft: "5%",
     marginTop: "3%",
-    color: "white"
+    color: "white",
+    fontSize: "26px"
 }
 
 export default function RightPanel() {

@@ -1,6 +1,6 @@
 import React from 'react';
-import LeftPanel from "./LeftPanel";
-import RightPanel from "./RightPanel";
+import LeftPanel from "./Panels/LeftPanel";
+import RightPanel from "./Panels/RightPanel";
 
 
 const MainStyle = {

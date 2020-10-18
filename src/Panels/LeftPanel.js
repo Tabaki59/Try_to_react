@@ -1,5 +1,7 @@
 import React from 'react'
-import Picture from './Photo.png';
+import Picture from '../Photo.png';
+import SocialNetworks from "./SocialNetworks";
+
 
 /*Главный стиль для левого блока*/
 const PersonInformationStyle = {
@@ -33,7 +35,8 @@ const TittlesStyle = {
     textAlign: "center",
     marginLeft: "5%",
     marginTop: "3%",
-    color: "white"
+    color: "white",
+    fontSize: "20px"
 }
 
 export default function LeftPanel() {
@@ -43,16 +46,22 @@ export default function LeftPanel() {
             <img src={Picture} alt="" style={PhotoStyle}/>
                 <figcaption style={NameStyle}>Петухов Александр Сергеевич</figcaption>  {/*  TODO Все утолкать в Json'ы и сделать переключатель языка*/}
             </figure>
+
+            <div className="Education">
             <hr width="90%" align="center" size="2" color="white"/>
             <h1 style={TittlesStyle}>Образование</h1>  {/*TODO Все утолкать в Json'ы и сделать переключатель языка*/}
             <hr width="90%" align="center" size="2" color="white"/>
             Заглушка
-            {/*TODO контент об образовании*/}
+                {/*TODO контент об образовании*/}
+            </div>
+
+            <div className="SocialNetworks">
             <hr width="90%" align="center" size="2" color="white"/>
             <h1 style={TittlesStyle}>Контакты</h1> {/* TODO Все утолкать в Json'ы и сделать переключатель языка*/}
             <hr width="90%" align="center" size="2" color="white"/>
-            Заглушка
-            {/*TODO контент со связью*/}
+                {/*TODO контент со связью*/}
+            <SocialNetworks />
+            </div>
         </div>
         )
 }
